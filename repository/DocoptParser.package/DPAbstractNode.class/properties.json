@@ -1,0 +1,14 @@
+{
+	"category" : "DocoptParser-AST",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/30/2015 20:26",
+	"instvars" : [
+		 ],
+	"name" : "DPAbstractNode",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

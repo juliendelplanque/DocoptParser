@@ -1,0 +1,1 @@
+I am the node which represent the default value of an option ([default: x]).

@@ -1,0 +1,3 @@
+visiting
+visitUsagePatternNode: aDPUsagePatternNode
+	self subclassResponsibility

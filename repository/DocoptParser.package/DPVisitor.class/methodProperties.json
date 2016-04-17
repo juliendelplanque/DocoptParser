@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"visitAllOptionsNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitArgumentNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitCommandNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitComposedShortOptionNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitDefaultValueNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitDocoptNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitElementsGroupNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitEllipsisNode:" : "JulienDelplanque 12/7/2015 17:50",
+		"visitLongOptionNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitMutuallyExclusiveElementsNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitOptionDescriptionPatternNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitOptionDescriptionsNode:" : "JulienDelplanque 3/2/2016 12:33",
+		"visitOptionalElementsNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitProgramNameNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitRequiredElementsNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitShortOptionNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitUsageNode:" : "JulienDelplanque 12/7/2015 17:51",
+		"visitUsagePatternNode:" : "JulienDelplanque 12/7/2015 17:51" } }

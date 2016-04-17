@@ -1,0 +1,1 @@
+I am the error raised when an option is invalid.

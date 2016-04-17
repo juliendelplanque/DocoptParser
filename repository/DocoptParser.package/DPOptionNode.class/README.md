@@ -1,0 +1,1 @@
+I am a generic option, my subclasses represent concrete options.

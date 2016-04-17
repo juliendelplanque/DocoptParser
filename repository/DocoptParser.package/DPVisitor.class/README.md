@@ -1,0 +1,1 @@
+I am a generic visitor which visit the Docopt's AST.

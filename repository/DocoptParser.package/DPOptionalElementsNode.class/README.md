@@ -1,0 +1,1 @@
+I am a node which represent an optional element (ie an element between [] ).

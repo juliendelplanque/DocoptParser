@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"argumentLesserGreater" : "JulienDelplanque 11/30/2015 20:32",
+		"argumentUppercase" : "JulienDelplanque 11/30/2015 20:38",
+		"command" : "JulienDelplanque 11/30/2015 20:46",
+		"defaultValue" : "JulienDelplanque 11/30/2015 20:57",
+		"docopt" : "JulienDelplanque 3/2/2016 10:53",
+		"ellipsis" : "JulienDelplanque 12/3/2015 06:52",
+		"longOption" : "JulienDelplanque 12/2/2015 07:07",
+		"mutuallyExclusiveElements" : "JulienDelplanque 3/2/2016 11:23",
+		"option" : "JulienDelplanque 12/2/2015 07:04",
+		"optionDescriptionPattern" : "JulienDelplanque 12/2/2015 16:54",
+		"optionDescriptions" : "JulienDelplanque 12/3/2015 07:19",
+		"optionalElements" : "JulienDelplanque 12/2/2015 11:43",
+		"options" : "JulienDelplanque 12/2/2015 11:48",
+		"programName" : "JulienDelplanque 12/2/2015 12:10",
+		"requiredElements" : "JulienDelplanque 12/2/2015 11:40",
+		"usage" : "JulienDelplanque 12/2/2015 13:55",
+		"usagePattern" : "JulienDelplanque 3/16/2016 12:39" } }

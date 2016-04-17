@@ -1,0 +1,3 @@
+visiting
+visitLongOptionNode: aDPLongOptionNode
+	self subclassResponsibility

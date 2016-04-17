@@ -1,0 +1,3 @@
+visiting
+visitShortOptionNode: aDPShortOptionNode
+	self subclassResponsibility

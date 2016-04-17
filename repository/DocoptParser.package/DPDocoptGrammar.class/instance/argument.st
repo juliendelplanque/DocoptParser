@@ -1,0 +1,3 @@
+accessing
+argument
+	^ argumentLesserGreater / argumentUppercase
