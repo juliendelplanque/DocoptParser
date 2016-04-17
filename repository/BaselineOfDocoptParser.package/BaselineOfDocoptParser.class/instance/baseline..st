@@ -4,7 +4,7 @@ baseline: spec
 	spec
 		for: #common
 		do: [ 
-			self
+			spec
 				package: 'DocoptParser' with: [ spec requires: #('PetitParser') ];
 				project: 'PetitParser' with: [ 
 					spec
