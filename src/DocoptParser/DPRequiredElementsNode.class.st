@@ -18,8 +18,8 @@ DPRequiredElementsNode class >> requiredElements: anElementList [
 ]
 
 { #category : #visiting }
-DPRequiredElementsNode >> accept: aDPVisitor [
-	^ aDPVisitor visitRequiredElementsNode: self
+DPRequiredElementsNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPRequiredElementsNode: self
 ]
 
 { #category : #accessing }

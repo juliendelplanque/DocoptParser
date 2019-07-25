@@ -18,8 +18,8 @@ DPArgumentNode class >> argumentName: aString [
 ]
 
 { #category : #visiting }
-DPArgumentNode >> accept: aDPVisitor [
-	^ aDPVisitor visitArgumentNode: self
+DPArgumentNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPArgumentNode: self
 ]
 
 { #category : #accessing }
@@ -30,4 +30,12 @@ DPArgumentNode >> argumentName [
 { #category : #accessing }
 DPArgumentNode >> argumentName: anObject [
 	argumentName := anObject
+]
+
+{ #category : #printing }
+DPArgumentNode >> printOn: aStream [
+	super printOn: aStream.
+	aStream nextPutAll: '(<'.
+	aStream nextPutAll: self argumentName.
+	aStream nextPutAll: '>)'.
 ]

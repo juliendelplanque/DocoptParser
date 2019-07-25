@@ -18,8 +18,8 @@ DPDefaultValueNode class >> defaultValue: aDefaultValue [
 ]
 
 { #category : #visiting }
-DPDefaultValueNode >> accept: aDPVisitor [
-	^ aDPVisitor visitDefaultValueNode: self
+DPDefaultValueNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPDefaultValueNode: self
 ]
 
 { #category : #accessing }

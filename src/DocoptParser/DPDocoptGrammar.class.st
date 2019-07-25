@@ -30,9 +30,10 @@ Class {
 		'argumentUppercase',
 		'argumentLesserGreater',
 		'mutuallyExclusiveElementsRightPart',
-		'optionDescriptionPatterns'
+		'optionDescriptionPatterns',
+		'space'
 	],
-	#category : 'DocoptParser-Parser'
+	#category : #'DocoptParser-Parser'
 }
 
 { #category : #testing }
@@ -62,7 +63,7 @@ DPDocoptGrammar >> command [
 
 { #category : #accessing }
 DPDocoptGrammar >> defaultValue [
-	^ $[ asParser , 'default:' asParser , Character space asParser , (#any asParser starLazy: $] asParser) flatten , $] asParser
+	^ $[ asParser , 'default:' asParser , space , (#any asParser starLazy: $] asParser) flatten , $] asParser
 ]
 
 { #category : #accessing }
@@ -113,9 +114,9 @@ DPDocoptGrammar >> option [
 { #category : #accessing }
 DPDocoptGrammar >> optionDescriptionPattern [
 	^ #space asParser star,
-	  option , (Character space asParser optional , argument) star,
-	  ((($, asParser , #space asParser star) / Character space asParser plus) optional,
-	  option , (Character space asParser optional , argument) star) optional ,
+	  option , (space optional , argument) star,
+	  ((($, asParser , #space asParser star) / space plus) optional,
+	  option , (space optional , argument) star) optional ,
 	  (#space asParser min: 2 max: Float infinity) ,
 	  (#letter asParser / #space asParser / $( asParser / $) asParser) star flatten , defaultValue optional , $. asParser optional , #newline asParser optional
 ]
@@ -161,6 +162,11 @@ DPDocoptGrammar >> simpleDash [
 ]
 
 { #category : #accessing }
+DPDocoptGrammar >> space [
+	^ Character space asParser
+]
+
+{ #category : #accessing }
 DPDocoptGrammar >> start [
 	^ docopt end
 ]
@@ -172,7 +178,7 @@ DPDocoptGrammar >> usage [
 
 { #category : #accessing }
 DPDocoptGrammar >> usagePattern [
-	^ #space asParser star , programName , Character space asParser star , element , Character space asParser star ,  ellipsis optional , ($| asParser optional , Character space asParser star , element , Character space asParser star , ellipsis optional) star , #newline asParser optional
+	^ #space asParser star , programName , space star , element , space star ,  ellipsis optional , ($| asParser optional , space star , element , space star , ellipsis optional) star , #newline asParser optional
 ]
 
 { #category : #accessing }

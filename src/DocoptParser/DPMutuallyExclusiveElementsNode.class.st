@@ -18,8 +18,8 @@ DPMutuallyExclusiveElementsNode class >> mutuallyExclusiveElements: aCollectionO
 ]
 
 { #category : #visiting }
-DPMutuallyExclusiveElementsNode >> accept: aDPVisitor [
-	^ aDPVisitor visitMutuallyExclusiveElementsNode: self
+DPMutuallyExclusiveElementsNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPMutuallyExclusiveElementsNode: self
 ]
 
 { #category : #accessing }

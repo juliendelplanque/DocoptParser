@@ -8,6 +8,6 @@ Class {
 }
 
 { #category : #visiting }
-DPComposedShortOptionNode >> accept: aDPVisitor [
-	^ aDPVisitor visitComposedShortOptionNode: self
+DPComposedShortOptionNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPComposedShortOptionNode: self
 ]

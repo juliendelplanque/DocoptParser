@@ -18,8 +18,8 @@ DPOptionDescriptionsNode class >> optionDescriptions: aListOfDescription [
 ]
 
 { #category : #visiting }
-DPOptionDescriptionsNode >> accept: aDPVisitor [
-	^ aDPVisitor visitOptionDescriptionsNode: self
+DPOptionDescriptionsNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPOptionDescriptionsNode: self
 ]
 
 { #category : #accessing }

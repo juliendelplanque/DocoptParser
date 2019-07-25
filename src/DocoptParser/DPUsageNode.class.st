@@ -18,8 +18,8 @@ DPUsageNode class >> usagePatterns: aListOfPatterns [
 ]
 
 { #category : #visiting }
-DPUsageNode >> accept: aDPVisitor [
-	^ aDPVisitor visitUsageNode: self
+DPUsageNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPUsageNode: self
 ]
 
 { #category : #accessing }

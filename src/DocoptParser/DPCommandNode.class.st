@@ -18,8 +18,8 @@ DPCommandNode class >> commandName: aString [
 ]
 
 { #category : #visiting }
-DPCommandNode >> accept: aDPVisitor [
-	^ aDPVisitor visitCommandNode: self
+DPCommandNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPCommandNode: self
 ]
 
 { #category : #accessing }
@@ -30,4 +30,12 @@ DPCommandNode >> commandName [
 { #category : #accessing }
 DPCommandNode >> commandName: anObject [
 	commandName := anObject
+]
+
+{ #category : #printing }
+DPCommandNode >> printOn: aStream [
+	super printOn: aStream.
+	aStream nextPut: $(.
+	aStream nextPutAll: self commandName.
+	aStream nextPut: $)
 ]

@@ -8,91 +8,96 @@ Class {
 }
 
 { #category : #visiting }
-DPVisitor >> visitAllOptionsNode: aDPAllOptionNode [
-	self subclassResponsibility
+DPVisitor >> visit: anObject [
+	^ anObject acceptVisitor: self
 ]
 
 { #category : #visiting }
-DPVisitor >> visitArgumentNode: aDPArgumentNode [
-	self subclassResponsibility
+DPVisitor >> visitDPAllOptionsNode: aDPAllOptionsNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitCommandNode: aDPCommandNode [
-	self subclassResponsibility
+DPVisitor >> visitDPArgumentNode: aDPArgumentNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitComposedShortOptionNode: aDPComposedShortOptionNode [
-	self subclassResponsibility
+DPVisitor >> visitDPCommandNode: aDPCommandNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitDefaultValueNode: aDPDefaultValueNode [
-	self subclassResponsibility
+DPVisitor >> visitDPComposedShortOptionNode: aDPComposedShortOptionNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitDocoptNode: aDPDocoptNode [
-	self subclassResponsibility
+DPVisitor >> visitDPDefaultValueNode: aDPDefaultValueNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitElementsGroupNode: aDPElementsGroupNode [
-	self subclassResponsibility
+DPVisitor >> visitDPDocoptNode: aDPDocoptNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitEllipsisNode: aDPEllipsisNode [
-	self subclassResponsibility
+DPVisitor >> visitDPElementsGroupNode: aDPElementsGroupNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitLongOptionNode: aDPLongOptionNode [
-	self subclassResponsibility
+DPVisitor >> visitDPEllipsisNode: aDPEllipsisNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitMutuallyExclusiveElementsNode: aDPMutuallyExclusiveElementsNode [
-	self subclassResponsibility
+DPVisitor >> visitDPLongOptionNode: aDPLongOptionNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitOptionDescriptionPatternNode: aDPOptionDescriptionPatternNode [
-	self subclassResponsibility
+DPVisitor >> visitDPMutuallyExclusiveElementsNode: aDPMutuallyExclusiveElementsNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitOptionDescriptionsNode: aDPOptionDescriptionNode [
-	self subclassResponsibility
+DPVisitor >> visitDPOptionDescriptionPatternNode: aDPOptionDescriptionPatternNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitOptionalElementsNode: aDPOptionalElementsNode [
-	self subclassResponsibility
+DPVisitor >> visitDPOptionDescriptionsNode: aDPOptionDescriptionsNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitProgramNameNode: aDPProgramNameNode [
-	self subclassResponsibility
+DPVisitor >> visitDPOptionalElementsNode: aDPOptionalElementsNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitRequiredElementsNode: aDPRequiredElementsNode [
-	self subclassResponsibility
+DPVisitor >> visitDPProgramNameNode: aDPProgramNameNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitShortOptionNode: aDPShortOptionNode [
-	self subclassResponsibility
+DPVisitor >> visitDPRequiredElementsNode: aDPRequiredElementsNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitUsageNode: aDPUsageNode [
-	self subclassResponsibility
+DPVisitor >> visitDPShortOptionNode: aDPShortOptionNode [
+	^ self subclassResponsibility
 ]
 
 { #category : #visiting }
-DPVisitor >> visitUsagePatternNode: aDPUsagePatternNode [
-	self subclassResponsibility
+DPVisitor >> visitDPUsageNode: aDPUsageNode [
+	^ self subclassResponsibility
+]
+
+{ #category : #visiting }
+DPVisitor >> visitDPUsagePatternNode: aDPUsagePatternNode [
+	^ self subclassResponsibility
 ]

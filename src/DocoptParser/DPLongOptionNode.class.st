@@ -8,6 +8,14 @@ Class {
 }
 
 { #category : #visiting }
-DPLongOptionNode >> accept: aDPVisitor [
-	^ aDPVisitor visitLongOptionNode: self
+DPLongOptionNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPLongOptionNode: self
+]
+
+{ #category : #'as yet unclassified' }
+DPLongOptionNode >> printOn: aStream [
+	super printOn: aStream.
+	aStream nextPutAll: '('.
+	aStream nextPutAll: self option.
+	aStream nextPutAll: ')'.
 ]

@@ -14,8 +14,8 @@ Class {
 }
 
 { #category : #visiting }
-DPOptionDescriptionPatternNode >> accept: aDPVisitor [
-	^ aDPVisitor visitOptionDescriptionPatternNode: self
+DPOptionDescriptionPatternNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPOptionDescriptionPatternNode: self
 ]
 
 { #category : #accessing }

@@ -8,6 +8,6 @@ Class {
 }
 
 { #category : #visiting }
-DPEllipsisNode >> accept: aDPVisitor [
-	^ aDPVisitor visitEllipsisNode: self
+DPEllipsisNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPEllipsisNode: self
 ]

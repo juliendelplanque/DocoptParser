@@ -6,8 +6,3 @@ Class {
 	#superclass : #Object,
 	#category : 'DocoptParser-AST'
 }
-
-{ #category : #visiting }
-DPAbstractNode >> accept: aDPVisitor [
-	self subclassResponsibility
-]

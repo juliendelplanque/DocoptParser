@@ -18,8 +18,8 @@ DPOptionalElementsNode class >> optionalElements: anElementList [
 ]
 
 { #category : #visiting }
-DPOptionalElementsNode >> accept: aDPVisitor [
-	^ aDPVisitor visitOptionalElementsNode: self
+DPOptionalElementsNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPOptionalElementsNode: self
 ]
 
 { #category : #accessing }
@@ -30,4 +30,12 @@ DPOptionalElementsNode >> optionalElements [
 { #category : #accessing }
 DPOptionalElementsNode >> optionalElements: anObject [
 	optionalElements := anObject
+]
+
+{ #category : #printing }
+DPOptionalElementsNode >> printOn: aStream [
+	super printOn: aStream.
+	aStream nextPutAll: '(['.
+	self optionalElements printOn: aStream.
+	aStream nextPutAll: '])'
 ]

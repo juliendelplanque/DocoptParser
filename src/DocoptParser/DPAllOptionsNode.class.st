@@ -8,6 +8,6 @@ Class {
 }
 
 { #category : #visiting }
-DPAllOptionsNode >> accept: aDPVisitor [
-	^ aDPVisitor visitAllOptionsNode: self
+DPAllOptionsNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPAllOptionsNode: self
 ]

@@ -18,8 +18,8 @@ DPProgramNameNode class >> name: aString [
 ]
 
 { #category : #visiting }
-DPProgramNameNode >> accept: aDPVisitor [
-	^ aDPVisitor visitProgramNameNode: self
+DPProgramNameNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPProgramNameNode: self
 ]
 
 { #category : #accessing }
@@ -30,4 +30,12 @@ DPProgramNameNode >> name [
 { #category : #accessing }
 DPProgramNameNode >> name: anObject [
 	name := anObject
+]
+
+{ #category : #printing }
+DPProgramNameNode >> printOn: aStream [
+	super printOn: aStream.
+	aStream nextPut: $(.
+	aStream nextPutAll: self name.
+	aStream nextPut: $)
 ]

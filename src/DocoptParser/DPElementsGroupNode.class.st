@@ -3,7 +3,7 @@ I am the node representing a set of elements grouped together. I am used with mu
 
 For example: (--hello name | --goodbye name)
 --hello name is hold in a DPElementsGroupNode.
---goodbye name is hold in aDPElementsGroupNode
+--goodbye name is hold in a DPElementsGroupNode
 
 And these two nodes are hold in a DPMutuallyExclusiveElementsNode.
 "
@@ -13,7 +13,7 @@ Class {
 	#instVars : [
 		'elements'
 	],
-	#category : 'DocoptParser-AST'
+	#category : #'DocoptParser-AST'
 }
 
 { #category : #'instance creation' }
@@ -24,8 +24,8 @@ DPElementsGroupNode class >> elements: aListOfElements [
 ]
 
 { #category : #visiting }
-DPElementsGroupNode >> accept: aDPVisitor [
-	^ aDPVisitor visitElementsGroupNode: self
+DPElementsGroupNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPElementsGroupNode: self
 ]
 
 { #category : #accessing }

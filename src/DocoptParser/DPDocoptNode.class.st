@@ -22,8 +22,8 @@ DPDocoptNode class >> description: aString usage: aDPUsageNode optionDescription
 ]
 
 { #category : #visiting }
-DPDocoptNode >> accept: aDPVisitor [
-	^ aDPVisitor visitDocoptNode: self
+DPDocoptNode >> acceptVisitor: aDPVisitor [
+	^ aDPVisitor visitDPDocoptNode: self
 ]
 
 { #category : #accessing }
