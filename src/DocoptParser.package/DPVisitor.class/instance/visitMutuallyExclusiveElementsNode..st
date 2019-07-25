@@ -1,3 +1,0 @@
-visiting
-visitMutuallyExclusiveElementsNode: aDPMutuallyExclusiveElementsNode
-	self subclassResponsibility

@@ -1,3 +1,0 @@
-accessing
-option
-	^ shortOption / longOption

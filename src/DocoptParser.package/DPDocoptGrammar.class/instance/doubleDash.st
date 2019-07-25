@@ -1,3 +1,0 @@
-accessing
-doubleDash
-	^ '--' asParser

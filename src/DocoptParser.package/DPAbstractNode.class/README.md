@@ -1,1 +1,0 @@
-I am an abstract node of the docopt's AST.

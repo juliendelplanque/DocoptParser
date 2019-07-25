@@ -1,3 +1,0 @@
-visiting
-visitEllipsisNode: aDPEllipsisNode
-	self subclassResponsibility

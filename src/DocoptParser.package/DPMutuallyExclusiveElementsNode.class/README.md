@@ -1,1 +1,0 @@
-I am the node which represent mutually exclusive elements (ie separated by | ).

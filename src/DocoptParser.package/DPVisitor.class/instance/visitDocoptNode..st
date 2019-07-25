@@ -1,3 +1,0 @@
-visiting
-visitDocoptNode: aDPDocoptNode
-	self subclassResponsibility

@@ -1,3 +1,0 @@
-accessing
-simpleDash
-	^ $- asParser trim

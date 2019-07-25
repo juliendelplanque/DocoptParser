@@ -1,3 +1,0 @@
-visiting
-visitOptionDescriptionsNode: aDPOptionDescriptionNode
-	self subclassResponsibility

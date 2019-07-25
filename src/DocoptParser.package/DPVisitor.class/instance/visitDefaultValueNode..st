@@ -1,3 +1,0 @@
-visiting
-visitDefaultValueNode: aDPDefaultValueNode
-	self subclassResponsibility

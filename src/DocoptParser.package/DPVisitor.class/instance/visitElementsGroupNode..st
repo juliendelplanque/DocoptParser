@@ -1,3 +1,0 @@
-visiting
-visitElementsGroupNode: aDPElementsGroupNode
-	self subclassResponsibility

@@ -1,3 +1,0 @@
-visiting
-visitOptionalElementsNode: aDPOptionalElementsNode
-	self subclassResponsibility

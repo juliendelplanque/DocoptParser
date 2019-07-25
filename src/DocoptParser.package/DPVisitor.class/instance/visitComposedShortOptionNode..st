@@ -1,3 +1,0 @@
-visiting
-visitComposedShortOptionNode: aDPComposedShortOptionNode
-	self subclassResponsibility

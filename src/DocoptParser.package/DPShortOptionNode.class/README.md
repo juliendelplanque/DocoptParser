@@ -1,1 +1,0 @@
-I am a short option (ie. -a).

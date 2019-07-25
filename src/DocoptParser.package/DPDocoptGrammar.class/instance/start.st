@@ -1,3 +1,0 @@
-accessing
-start
-	^ docopt end

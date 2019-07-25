@@ -1,1 +1,0 @@
-I am the node which represnet a usage pattern (ie. my_program command <arg>).

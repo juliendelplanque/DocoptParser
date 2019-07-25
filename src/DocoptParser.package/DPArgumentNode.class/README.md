@@ -1,1 +1,0 @@
-I am the node which represent an argument of a command or a parameter.

@@ -1,1 +1,0 @@
-I am a node which represent the program name.

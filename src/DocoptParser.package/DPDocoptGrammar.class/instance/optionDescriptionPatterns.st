@@ -1,3 +1,0 @@
-accessing
-optionDescriptionPatterns
-	^ optionDescriptionPattern plus

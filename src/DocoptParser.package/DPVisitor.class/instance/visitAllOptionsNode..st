@@ -1,3 +1,0 @@
-visiting
-visitAllOptionsNode: aDPAllOptionNode
-	self subclassResponsibility

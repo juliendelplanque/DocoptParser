@@ -1,1 +1,0 @@
-I am the parser for docopt command line descriptions.

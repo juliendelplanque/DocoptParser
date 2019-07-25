@@ -1,1 +1,0 @@
-I am the node which represent a command in the command line arguments.
