@@ -46,9 +46,9 @@ DPDocoptASTBuilder >> longOption [
 { #category : #accessing }
 DPDocoptASTBuilder >> mutuallyExclusiveElements [
 	^ super mutuallyExclusiveElements ==> [ :parsingItems |
-		Array with: (DPMutuallyExclusiveElementsNode
+		DPMutuallyExclusiveElementsNode
 							mutuallyExclusiveElements: ((parsingItems flattened splitOn: $|)
-													collect: [ :list | DPElementsGroupNode elements: list ])) ]
+													collect: [ :list | DPElementsGroupNode elements: list ]) ]
 ]
 
 { #category : #accessing }
@@ -99,7 +99,7 @@ DPDocoptASTBuilder >> options [
 
 { #category : #accessing }
 DPDocoptASTBuilder >> programName [
-	^ super programName ==> [ :parsingItems | DPProgramNameNode programName: parsingItems ]
+	^ super programName ==> [ :parsingItems | DPProgramNameNode name: parsingItems ]
 ]
 
 { #category : #accessing }
@@ -114,8 +114,8 @@ DPDocoptASTBuilder >> usage [
 
 { #category : #accessing }
 DPDocoptASTBuilder >> usagePattern [
-	| flatItems elements |
 	^ super usagePattern ==> [ :parsingItems |
+		| flatItems elements progName mutExclusiveElements |
 		flatItems := parsingItems flattened.
 		(flatItems anySatisfy: [ :any | any = $| ])
 			ifFalse: [ 
@@ -123,13 +123,13 @@ DPDocoptASTBuilder >> usagePattern [
 					usagePattern: (flatItems
 											reject: [ :item | item isNil or: [ item isCharacter ] ]) ]
 			ifTrue: [
-				programName := flatItems first.
+				progName := flatItems first.
 				elements := (flatItems copyFrom: 2 to: flatItems size)
 									reject: [ :e | (e isCharacter and: [ e ~= $| ]) or: [ e isNil ] ].
-				mutuallyExclusiveElements := (elements splitOn: $|)
+				mutExclusiveElements := (elements splitOn: $|)
 														collect: [ :list | DPElementsGroupNode elements: list ].
 				DPUsagePatternNode usagePattern: (Array
-																with: programName
+																with: progName
 																with: (DPMutuallyExclusiveElementsNode
-																			mutuallyExclusiveElements: mutuallyExclusiveElements)) ] ]
+																			mutuallyExclusiveElements: mutExclusiveElements)) ] ]
 ]

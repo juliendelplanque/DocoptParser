@@ -5,15 +5,15 @@ Class {
 	#name : #DPProgramNameNode,
 	#superclass : #DPAbstractNode,
 	#instVars : [
-		'programName'
+		'name'
 	],
-	#category : 'DocoptParser-AST'
+	#category : #'DocoptParser-AST'
 }
 
 { #category : #'instance creation' }
-DPProgramNameNode class >> programName: aString [
+DPProgramNameNode class >> name: aString [
 	^ self new
-		programName: aString;
+		name: aString;
 		yourself
 ]
 
@@ -23,11 +23,11 @@ DPProgramNameNode >> accept: aDPVisitor [
 ]
 
 { #category : #accessing }
-DPProgramNameNode >> programName [
-	^ programName
+DPProgramNameNode >> name [
+	^ name
 ]
 
 { #category : #accessing }
-DPProgramNameNode >> programName: anObject [
-	programName := anObject
+DPProgramNameNode >> name: anObject [
+	name := anObject
 ]

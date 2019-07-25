@@ -12,7 +12,7 @@ Class {
 
 { #category : #'instance creation' }
 DPOptionNode class >> option: aStringStartingWithDash [
-	(aStringStartingWithDash beginsWith: '---')
+	(aStringStartingWithDash count: [ :c | c = $- ]) > 2
 		ifTrue: [ InvalidOptionError signal ].
 	(aStringStartingWithDash beginsWith: '--')
 		ifTrue: [ ^ DPLongOptionNode new option: aStringStartingWithDash; yourself ].

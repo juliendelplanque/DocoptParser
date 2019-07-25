@@ -86,11 +86,10 @@ DPDocoptASTBuilderTest >> testLongOption [
 
 { #category : #'tests-accessing' }
 DPDocoptASTBuilderTest >> testMutuallyExclusiveElements [
-	| array |
-	array := self parse: '--verbose|--quiet' rule: #mutuallyExclusiveElements.
-	self assert: array size equals: 1.
-	self assert: array first class equals: DPMutuallyExclusiveElementsNode.
-	self assert: array first mutuallyExclusiveElements size equals: 2.
+	| node |
+	node := self parse: '--verbose|--quiet' rule: #mutuallyExclusiveElements.
+	self assert: node class equals: DPMutuallyExclusiveElementsNode.
+	self assert: node mutuallyExclusiveElements size equals: 2.
 ]
 
 { #category : #'tests-accessing' }
@@ -162,7 +161,7 @@ DPDocoptASTBuilderTest >> testProgramName [
 	| node |
 	node := self parse: 'naval_fate' rule: #programName.
 	self assert: node class equals: DPProgramNameNode.
-	self assert: node programName equals: 'naval_fate'
+	self assert: node name equals: 'naval_fate'
 ]
 
 { #category : #'tests-accessing' }

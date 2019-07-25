@@ -35,6 +35,11 @@ Class {
 	#category : 'DocoptParser-Parser'
 }
 
+{ #category : #testing }
+DPDocoptGrammar class >> isTypeCheckingEnabled [
+	^ true
+]
+
 { #category : #accessing }
 DPDocoptGrammar >> argument [
 	^ argumentLesserGreater / argumentUppercase
