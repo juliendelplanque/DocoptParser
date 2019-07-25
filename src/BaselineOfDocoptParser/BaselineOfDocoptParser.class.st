@@ -14,10 +14,9 @@ BaselineOfDocoptParser >> baseline: spec [
 		for: #common
 		do: [ 
 			spec
-				package: 'DocoptParser' with: [ spec requires: #('PetitParser') ];
-				project: 'PetitParser' with: [ 
-					spec
-						className: 'ConfigurationOfPetitParser';
-						version: #stable;
-						repository: 'http://smalltalkhub.com/mc/Moose/PetitParser/main' ] ]
+				package: 'DocoptParser' with: [ spec requires: #('PetitParser') ].
+			
+			spec baseline: 'PetitParser' with: [ 
+				spec repository: 'github://moosetechnology/PetitParser/src';
+					loads: 'Core' ] ]
 ]
